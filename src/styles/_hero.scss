@@ -1,0 +1,64 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    .container {
+        position: relative;
+    }
+
+    &__title {
+        font-size: 40px;
+    }
+
+    &__counter {
+        color: #f5f5f5;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 64px;
+    }
+
+    &__infos {
+        max-width: 90%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 24px;
+
+        &__item {
+            margin-bottom: 8px;
+
+            u {
+                font-size: 24px;
+                font-weight: 600;
+                color: #000;
+            }
+
+            p {
+                font-size: 18px;
+                color: #000;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .container {
+            max-width: 80%;
+        }
+
+        &__title {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        &__counter {
+            font-size: 28px;
+        }
+    }
+}
